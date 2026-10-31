@@ -35,8 +35,5 @@ for source in catalog['repositories']:
         errors.append(f'unpinned source: {source["repository"]}')
     if not source['reviewed_paths'] or not source['decision']:
         errors.append(f'unreviewed source entry: {source["repository"]}')
-for pdf in ['01-codex-operations-ko.pdf', '02-explanation-preparation-ko.pdf']:
-    if not (root/'pdf'/pdf).is_file():
-        errors.append(f'missing PDF: {pdf}')
 print(json.dumps({'skills': len(skills), 'sources': len(catalog['repositories']), 'errors': errors}, ensure_ascii=False, indent=2))
 sys.exit(bool(errors))

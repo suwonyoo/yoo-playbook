@@ -19,7 +19,6 @@
 
 ## 이 준비 저장소를 수정할 때
 
-- 실행 도구는 Python 3.10+ 표준 라이브러리만 사용한다. PDF 재생성만 PyMuPDF가 필요하다.
+- 실행 도구는 Python 3.10+ 표준 라이브러리만 사용한다.
 - 검증: `python3 -m unittest discover -s tests -v`, `python3 scripts/check_repo.py`.
-- PDF 수정 후 `python3 scripts/build_pdfs.py`로 재생성하고 페이지를 렌더링해 한글·표·코드 줄바꿈을 확인한다.
 - `sources/catalog.json`에 검토 출처·커밋·선정 이유를 기록한다. 외부 지침 원문을 복사할 때는 해당 파일의 라이선스를 먼저 확인한다.

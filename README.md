@@ -6,8 +6,6 @@ SK하이닉스 AI 해커톤 2026 준비를 위해 만들었습니다. 공식 제
 
 ## 바로 읽기
 
-- [Codex 운용 가이드 PDF](pdf/01-codex-operations-ko.pdf): 터미널 분리, 병렬 실행, 서브에이전트, 오류 복구, 시간 배분.
-- [서술형 준비 가이드 PDF](pdf/02-explanation-preparation-ko.pdf): 실제 구현을 설명하는 키워드, 근거 기록, 두 예시 질문, 사전 연습.
 - [스킬 선택표](START_HERE.md) · [명령과 도구 사용법](docs/harness.md) · [공개 자료 선별 결과](docs/source-selection.md)
 - [웹 과제](docs/web-playbook.md) · [데이터 과제](docs/data-playbook.md) · [장애 대응](docs/troubleshooting.md) · [프롬프트 모음](docs/prompts.md)
 
@@ -46,18 +44,15 @@ python3 /tmp/codex-hackathon-playbook/scripts/playbook.py init --workspace . --s
 
 실행 하네스는 자체적으로 네트워크 요청을 하지 않습니다. `run`은 사용자가 지정한 명령을 실행하므로 그 명령의 외부 접속까지 차단하는 샌드박스는 아닙니다. 로그는 지정 작업 공간에만 저장됩니다.
 
-## 검증과 재생성
+## 검증
 
 ```bash
 python3 -m unittest discover -s tests -v
 python3 scripts/check_repo.py
-# PDF 재생성에만 별도 의존성 필요
-python3 -m pip install -r requirements-pdf.txt
-python3 scripts/build_pdfs.py
 ```
 
-기본 도구는 Python 3.10+만 필요합니다. PDF 빌드와 검토 방법은 [PDF 제작 안내](docs/pdf-build.md)를 참고하세요. 테스트 범위·한계는 [검증 기록](docs/validation.md)에 남깁니다.
+기본 도구는 Python 3.10+만 필요합니다. 테스트 범위·한계는 [검증 기록](docs/validation.md)에 남깁니다.
 
 ## 공개 상태 유지
 
-제공받은 추가 공지에 따라 이 준비 저장소는 **2차 예선 결과 통지 전까지 공개 상태를 유지**합니다. 시험 중 생성한 문제·데이터·코드·협업 기록을 이 저장소로 push하지 않습니다. 실제 후속 서술형 단계에는 AI 사용과 복사·붙여넣기가 금지되므로, 두 번째 PDF는 사전에 읽고 연습하는 자료입니다.
+제공받은 추가 공지에 따라 이 준비 저장소는 **2차 예선 결과 통지 전까지 공개 상태를 유지**합니다. 시험 중 생성한 문제·데이터·코드·협업 기록을 이 저장소로 push하지 않습니다. 실제 후속 서술형 단계에는 AI 사용과 복사·붙여넣기가 금지되므로, 설명 연습 스킬은 사전 준비에만 사용합니다.
