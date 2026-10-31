@@ -1,0 +1,56 @@
+{
+  "reviewed_at": "2026-10-31",
+  "reuse_policy": "Reference and comparison only. No upstream skill text, code, fonts or private guide PDFs are vendored. Check file-specific licenses before copying upstream materials.",
+  "repositories": [
+    {
+      "repository": "https://github.com/openai/skills",
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "reviewed_paths": ["skills/.curated", "skills/.curated/pdf/SKILL.md", "skills/.curated/jupyter-notebook/SKILL.md"],
+      "decision": "Use as an official discovery reference; author small local document/data workflows. PDF rendering review and notebook reproducibility are relevant. Browser automation and deployment skills are not installed for exam use.",
+      "copied_files": []
+    },
+    {
+      "repository": "https://github.com/obra/superpowers",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "reviewed_paths": ["skills/systematic-debugging/SKILL.md", "skills/verification-before-completion/SKILL.md"],
+      "decision": "Compare evidence-led debugging and verification concepts; use shorter original task-specific skills without importing its entire workflow or approval requirements.",
+      "copied_files": []
+    },
+    {
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+      "reviewed_paths": ["skills/frontend-design/SKILL.md"],
+      "decision": "Reference UI clarity, meaningful states and visual review principles only. No Claude runtime or model integration; task functionality and exam restrictions take priority.",
+      "copied_files": []
+    },
+    {
+      "repository": "https://github.com/iflytek/skillhub",
+      "commit": "326cbd62244aac7dbd7a97a136148231d6a46ce6",
+      "reviewed_paths": ["README.md", "builtin-skills/catalog.json"],
+      "decision": "Use as a discovery index and example of versioned provenance. Review catalog entries rather than deploying a registry server or installing all bundled skills.",
+      "copied_files": []
+    },
+    {
+      "repository": "https://github.com/github/awesome-copilot",
+      "commit": "5269f7ea2d6c3a9bfda5ed878b6726cf509121fd",
+      "reviewed_paths": ["skills/documentation-writer/SKILL.md"],
+      "decision": "Reference the separation of how-to, reference and explanation. Do not import a mandatory outline-approval loop for a timed task.",
+      "copied_files": []
+    },
+    {
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "reviewed_paths": ["skills/web-design-guidelines/SKILL.md"],
+      "decision": "Reference UI review routing. Its live external guideline fetch is not required by this offline playbook; review actual task UI and explicit local checks.",
+      "copied_files": []
+    }
+  ],
+  "official_documentation": [
+    "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+    "https://learn.chatgpt.com/docs/developer-commands",
+    "https://learn.chatgpt.com/docs/codex/cli",
+    "https://skhynix-hackathon.com/ai-2026"
+  ]
+}

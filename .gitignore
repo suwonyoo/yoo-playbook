@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.playbook/
+tmp/
+.env
+.env.*
+!.env.example
+auth.json
+node_modules/
